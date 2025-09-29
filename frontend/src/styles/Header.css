@@ -1,0 +1,139 @@
+.app-header {
+  background: var(--legal-gradient);
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.title-section h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.title-section p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+}
+
+.info-badge {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.badge-label {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.8;
+  margin-bottom: 0.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-value {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .logo-section {
+    justify-content: center;
+  }
+
+  .title-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .title-section p {
+    font-size: 0.85rem;
+  }
+
+  .info-badge {
+    padding: 0.375rem 0.75rem;
+  }
+
+  .badge-label {
+    font-size: 0.65rem;
+  }
+
+  .badge-value {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1.75rem;
+  }
+
+  .title-section h1 {
+    font-size: 1.25rem;
+  }
+
+  .title-section p {
+    font-size: 0.8rem;
+  }
+
+  .logo-section {
+    gap: 0.75rem;
+  }
+
+  .info-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+  }
+
+  .badge-label {
+    font-size: 0.6rem;
+  }
+
+  .badge-value {
+    font-size: 0.75rem;
+  }
+}
